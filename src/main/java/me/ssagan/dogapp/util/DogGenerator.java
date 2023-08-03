@@ -1,9 +1,9 @@
 package me.ssagan.dogapp.util;
 
-import me.ssagan.dogapp.entity.Color;
-import me.ssagan.dogapp.entity.Dog;
-import me.ssagan.dogapp.entity.DogBreed;
-import me.ssagan.dogapp.entity.DogFactory;
+import me.ssagan.dogapp.model.entity.Dog;
+import me.ssagan.dogapp.model.entity.DogFactory;
+import me.ssagan.dogapp.model.evidence.Color;
+import me.ssagan.dogapp.model.evidence.DogBreed;
 
 import java.util.ArrayList;
 
@@ -23,7 +23,6 @@ public class DogGenerator {
     public ArrayList<Dog> generateDogList(int dogAmount) {
         DogFactory dogFactory = DogFactory.getInstance();
         ArrayList<Dog> dogList = new ArrayList<>();
-
         for (int i = 0; i < dogAmount; i++) {
             dogList.add(dogFactory
                     .createDog(getRandomBreed(), (int) (Math.random() * 10), (int) (Math.random() * 20), getRandomColor()));
@@ -32,10 +31,10 @@ public class DogGenerator {
     }
 
     private Color getRandomColor() {
-        return Color.getColor((int) (Math.random() * (Color.listGetLastIndex() + 1)));
+        return Color.values()[(int) (Math.random() * (Color.values().length))];
     }
 
     private DogBreed getRandomBreed() {
-        return DogBreed.getDogBreed((int) (Math.random() * (DogBreed.listGetLastIndex() + 1)));
+        return DogBreed.values()[(int) (Math.random() * (DogBreed.values().length))];
     }
 }

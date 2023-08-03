@@ -1,8 +1,8 @@
 package me.ssagan.dogapp._main;
 
-import me.ssagan.dogapp.entity.BarbieLevelComparator;
-import me.ssagan.dogapp.entity.Dog;
-import me.ssagan.dogapp.entity.DogAgeComparator;
+import me.ssagan.dogapp.model.comparator.BarbieLevelComparator;
+import me.ssagan.dogapp.model.entity.Dog;
+import me.ssagan.dogapp.model.comparator.DogAgeComparator;
 import me.ssagan.dogapp.util.DogGenerator;
 import me.ssagan.dogapp.view.DogListWriter;
 

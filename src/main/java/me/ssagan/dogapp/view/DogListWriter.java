@@ -1,6 +1,6 @@
 package me.ssagan.dogapp.view;
 
-import me.ssagan.dogapp.entity.Dog;
+import me.ssagan.dogapp.model.entity.Dog;
 
 import java.util.ArrayList;
 

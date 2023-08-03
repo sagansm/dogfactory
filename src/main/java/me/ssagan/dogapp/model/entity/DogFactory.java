@@ -1,4 +1,7 @@
-package me.ssagan.dogapp.entity;
+package me.ssagan.dogapp.model.entity;
+
+import me.ssagan.dogapp.model.evidence.Color;
+import me.ssagan.dogapp.model.evidence.DogBreed;
 
 public class DogFactory {
     private static DogFactory instance;

@@ -1,4 +1,6 @@
-package me.ssagan.dogapp.entity;
+package me.ssagan.dogapp.model.comparator;
+
+import me.ssagan.dogapp.model.entity.Dog;
 
 import java.util.Comparator;
 

@@ -1,4 +1,6 @@
-package me.ssagan.dogapp.entity;
+package me.ssagan.dogapp.model.entity;
+
+import me.ssagan.dogapp.model.evidence.Color;
 
 public class Dog {
     private static Long dogIdCounter = 0L;
